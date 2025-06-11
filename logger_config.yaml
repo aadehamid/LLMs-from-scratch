@@ -1,0 +1,26 @@
+version: 1
+disable_existing_loggers: true
+formatters:
+  simple:
+    format: "time:{asctime} - logger:{name} - filename:{filename} - level:{levelname} - message:{message}"
+    style: "{"
+
+handlers:
+  console:
+    formatter: simple
+    class: logging.StreamHandler
+    stream: ext://sys.stdout
+  rotating_file:
+    formatter: simple
+    class: logging.handlers.RotatingFileHandler
+    filename: "/Users/hamidadesokan/Dropbox/2_Skill_Development/DLML/LLMs-from-scratch/logs/logger.log"
+    maxBytes: 1000000
+    backupCount: 3
+
+
+loggers:
+  root:
+    level: INFO
+    handlers: [rotating_file]
+  tokenizer:
+    level: INFO
