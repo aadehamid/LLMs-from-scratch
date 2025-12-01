@@ -67,6 +67,31 @@ def decode(ids, merges, vocab):
     text = tokens.decode("utf-8", errors="replace")
     return text
 
+# def encode(text, merges):
+#     tokens = list(text.encode("utf-8"))
+#     while True:
+#         stats = pair_freq(tokens)
+#         # let us retunr the most eligible merging candidate
+#         pair = min(stats, key=lambda p: merges.get(p, float("inf")))
+#         if not pair:
+#             break # nothing else can be merged
+#         idx = merges[pair]
+#         tokens = merge(tokens, pair, idx)
+#
+#     return tokens
+def encode(text, merges):
+    tokens = list(text.encode("utf-8"))
+    while True:
+        stats = pair_freq(tokens)
+        # Filter only pairs that exist in merges
+        candidates = [p for p in stats if p in merges]
+        if not candidates:
+            break  # nothing else can be merged
+        # Pick the pair with the smallest merge index (earliest merge)
+        pair = min(candidates, key=lambda p: merges[p])
+        idx = merges[pair]
+        tokens = merge(tokens, pair, idx)
+    return tokens
 
 
 
@@ -110,7 +135,9 @@ def main():
     for (p0, p1), idx in merges.items():
         vocab[idx] = vocab[p0] + vocab[p1]
 
-    print(Panel(f"Decoded Text: {decode(ids, merges, vocab)}", title="[red bold]Decoded Text[/red bold]"))
+    print(Panel(f"Decoded Text: {decode( [32] , merges, vocab)}", title="[red bold]Decoded Text[/red bold]"))
+    print(Panel(f"encoded Text: {encode(" ", merges)}", title="[red bold]Encoded Text[/red bold]"))
+    print(text == decode(encode(text, merges), merges, vocab))
 
 
 
