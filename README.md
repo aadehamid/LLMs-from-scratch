@@ -187,6 +187,8 @@ Several folders contain optional materials as a bonus for interested readers:
     - [Qwen3 Dense and Mixture-of-Experts (MoE) From Scratch](ch05/11_qwen3/)
     - [Gemma 3 From Scratch](ch05/12_gemma3/)
     - [Olmo 3 From Scratch](ch05/13_olmo3/)
+    - [Tiny Aya From Scratch](ch05/15_tiny-aya/)
+    - [Qwen3.5 From Scratch](ch05/16_qwen3.5/)
   - [Chapter 5 with other LLMs as Drop-In Replacement (e.g., Llama 3, Qwen 3)](ch05/14_ch05_with_other_llms/)
 - **Chapter 6: Finetuning for classification**
   - [Additional Experiments Finetuning Different Layers and Using Larger Models](ch06/02_bonus_additional-experiments)
@@ -212,6 +214,13 @@ More bonus material from the [Reasoning From Scratch](https://github.com/rasbt/r
   - [Multiple-Choice Evaluation (MMLU)](https://github.com/rasbt/reasoning-from-scratch/blob/main/chF/02_mmlu)
   - [LLM Leaderboard Evaluation](https://github.com/rasbt/reasoning-from-scratch/blob/main/chF/03_leaderboards)
   - [LLM-as-a-Judge Evaluation](https://github.com/rasbt/reasoning-from-scratch/blob/main/chF/04_llm-judge)
+- **Inference Scaling**
+  - [Self-Consistency](https://github.com/rasbt/reasoning-from-scratch/blob/main/ch04/01_main-chapter-code/ch04_main.ipynb)
+  - [Self-Refinement](https://github.com/rasbt/reasoning-from-scratch/blob/main/ch05/01_main-chapter-code/ch05_main.ipynb)
+
+- **Reinforcement Learning** (RL)
+  - [RLVR with GRPO From Scratch](https://github.com/rasbt/reasoning-from-scratch/blob/main/ch06/01_main-chapter-code/ch06_main.ipynb)
+
 
 <br>
 &nbsp;
