@@ -42,6 +42,10 @@ By layer 6, each token's vector encodes not just "what word is this" but
 =============================================================================
 """
 
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import torch
 import torch.nn as nn
 

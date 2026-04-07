@@ -11,11 +11,12 @@ Think of these as "unit tests for a neural network architecture."
 """
 
 import sys
+from pathlib import Path
 import torch
 import torch.nn as nn
 
-# Add parent dir to path so imports work
-sys.path.insert(0, "/Users/hamidadesokan/Dropbox/2_Skill_Development/DLML/LLMs-from-scratch/feynman")
+# Add parent dir to path so imports work from any working directory
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from transformer_from_scratch.embeddings import TokenEmbedding, PositionalEncoding
 from transformer_from_scratch.attention import scaled_dot_product_attention, MultiHeadAttention
