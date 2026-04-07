@@ -6,18 +6,20 @@ A heavily-commented, from-scratch implementation of **"Attention Is All You Need
 
 Read these files in sequence — each builds on the previous:
 
-| # | File | What You'll Learn |
-|---|------|------------------|
-| 1 | `embeddings.py` | Token embeddings, sinusoidal positional encoding, why √d_model scaling |
-| 2 | `attention.py` | Scaled dot-product attention, multi-head attention, causal masking |
-| 3 | `feedforward.py` | Position-wise FFN, why the 4× expansion |
-| 4 | `encoder.py` | Encoder layer (self-attention + FFN + residuals + LayerNorm), full stack |
-| 5 | `decoder.py` | Decoder layer (masked self-attn + cross-attn + FFN), causal masking |
-| 6 | `transformer.py` | Full encoder-decoder, weight sharing, mask creation |
-| 7 | `lr_schedule.py` | Noam warmup-then-decay learning rate schedule |
-| 8 | `label_smoothing.py` | Label smoothing loss and why it helps generalization |
-| 9 | `train_toy.py` | Training loop on a copy task (verifies everything works) |
-| 10 | `run_tests.py` | 17 verification tests: shapes, masks, param count, gradient flow |
+
+| #   | File                 | What You'll Learn                                                        |
+| --- | -------------------- | ------------------------------------------------------------------------ |
+| 1   | `embeddings.py`      | Token embeddings, sinusoidal positional encoding, why √d_model scaling   |
+| 2   | `attention.py`       | Scaled dot-product attention, multi-head attention, causal masking       |
+| 3   | `feedforward.py`     | Position-wise FFN, why the 4× expansion                                  |
+| 4   | `encoder.py`         | Encoder layer (self-attention + FFN + residuals + LayerNorm), full stack |
+| 5   | `decoder.py`         | Decoder layer (masked self-attn + cross-attn + FFN), causal masking      |
+| 6   | `transformer.py`     | Full encoder-decoder, weight sharing, mask creation                      |
+| 7   | `lr_schedule.py`     | Noam warmup-then-decay learning rate schedule                            |
+| 8   | `label_smoothing.py` | Label smoothing loss and why it helps generalization                     |
+| 9   | `train_toy.py`       | Training loop on a copy task (verifies everything works)                 |
+| 10  | `run_tests.py`       | 17 verification tests: shapes, masks, param count, gradient flow         |
+
 
 ## Quick Start
 
@@ -58,4 +60,4 @@ Parameters         ~63M     With weight sharing
 
 **"Attention Is All You Need"**
 Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin (2017)
-https://arxiv.org/abs/1706.03762
+[https://arxiv.org/abs/1706.03762](https://arxiv.org/abs/1706.03762)
