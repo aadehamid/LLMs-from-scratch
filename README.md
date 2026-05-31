@@ -58,6 +58,7 @@ You can alternatively view this and other files on GitHub at [https://github.com
 [![Code tests Windows](https://github.com/rasbt/LLMs-from-scratch/actions/workflows/basic-tests-windows-uv-pip.yml/badge.svg)](https://github.com/rasbt/LLMs-from-scratch/actions/workflows/basic-tests-windows-uv-pip.yml)
 [![Code tests macOS](https://github.com/rasbt/LLMs-from-scratch/actions/workflows/basic-tests-macos-uv.yml/badge.svg)](https://github.com/rasbt/LLMs-from-scratch/actions/workflows/basic-tests-macos-uv.yml)
 
+- [Troubleshooting Guide](./troubleshooting.md)
 
 
 | Chapter Title                                              | Main Code (for Quick Access)                                                                                                    | All Code + Supplementary      |
@@ -170,6 +171,8 @@ Several folders contain optional materials as a bonus for interested readers:
     - [Multi-Head Latent Attention](ch04/05_mla)
     - [Sliding Window Attention](ch04/06_swa)
     - [Gated DeltaNet](ch04/08_deltanet)
+    - [DeepSeek Sparse Attention (DSA)](ch04/09_dsa)
+    - [Cross-Layer KV Sharing](ch04/10_kv-sharing)
   - [Mixture-of-Experts (MoE)](ch04/07_moe)
 
 - **Chapter 5: Pretraining on Unlabeled Data**
@@ -189,6 +192,7 @@ Several folders contain optional materials as a bonus for interested readers:
     - [Olmo 3 From Scratch](ch05/13_olmo3/)
     - [Tiny Aya From Scratch](ch05/15_tiny-aya/)
     - [Qwen3.5 From Scratch](ch05/16_qwen3.5/)
+    - [Gemma 4 E2B and E4B From Scratch](ch05/17_gemma4/)
   - [Chapter 5 with other LLMs as Drop-In Replacement (e.g., Llama 3, Qwen 3)](ch05/14_ch05_with_other_llms/)
 - **Chapter 6: Finetuning for classification**
   - [Additional Experiments Finetuning Different Layers and Using Larger Models](ch06/02_bonus_additional-experiments)
